@@ -1,0 +1,183 @@
+
+ 
+    <!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gocciban Trans - Bandara Soekarno Hatta</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+<style>
+@keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+body {
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #8e44ad, #f39cbb, #9b59b6, #f06292);
+    background-size: 400% 400%;
+    animation: gradientBG 20s ease infinite;
+    color: #fff;
+    overflow-x: hidden;
+}
+header {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: rgba(0,0,0,0.2);
+    border-radius: 15px;
+    margin: 20px auto;
+    max-width: 800px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+header h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+header p {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.button-whatsapp {
+    display: inline-block;
+    background-color: #ff5ca2;
+    color: white;
+    padding: 15px 35px;
+    font-size: 18px;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: 0.5s;
+    margin: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+.button-whatsapp:hover {
+    background-color: #e03e8c;
+    transform: translateY(-5px) scale(1.1) rotate(-2deg);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.4);
+}
+
+/* Section */
+section {
+    background-color: rgba(255,255,255,0.1);
+    margin: 20px auto;
+    padding: 30px 20px;
+    border-radius: 15px;
+    max-width: 800px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+section h2 {
+    color: #fff;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.services-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.service-item {
+    width: 180px;
+    margin: 15px;
+    text-align: center;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: 0.8s ease;
+}
+.service-item.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+.service-item img {
+    width: 100%;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+.service-item img:hover {
+    transform: scale(1.05);
+}
+.service-item p {
+    margin-top: 10px;
+    font-size: 16px;
+}
+.testimonial {
+    margin: 15px 0;
+    font-style: italic;
+}
+footer {
+    text-align: center;
+    padding: 15px 0;
+    font-size: 14px;
+    color: #ffffffcc;
+}
+@media(max-width: 600px){
+    header h1 { font-size: 36px; }
+    header p { font-size: 16px; }
+    .button-whatsapp { font-size: 16px; padding: 12px 25px; }
+    .services-container { flex-direction: column; align-items: center; }
+    .service-item { width: 80%; }
+}
+</style>
+</head>
+<body>
+
+<header>
+<h1>Gocciban Trans</h1>
+<p>Airport / Bandara Soekarno Hatta - Layanan Transportasi Profesional & Terpercaya</p>
+<a class="button-whatsapp" href="https://wa.me/6285816833556" target="_blank">Hubungi WA 1</a>
+<a class="button-whatsapp" href="https://wa.me/6285776729739" target="_blank">Hubungi WA 2</a>
+</header>
+
+<section>
+<h2>Layanan Kami</h2>
+<div class="services-container">
+    <div class="service-item">
+        <img src="https://images.unsplash.com/photo-1600053281647-f6aa1bb8eaaa?auto=format&fit=crop&w=400&q=80" alt="Mobil Premium">
+        <p>Sewa Mobil Premium & Eksekutif</p>
+    </div>
+    <div class="service-item">
+        <img src="https://images.unsplash.com/photo-1608889170641-846a8d14b57f?auto=format&fit=crop&w=400&q=80" alt="Transportasi Bandara">
+        <p>Transportasi Bandara Cepat & Aman</p>
+    </div>
+    <div class="service-item">
+        <img src="https://images.unsplash.com/photo-1571607388888-c2aa2b46d5a1?auto=format&fit=crop&w=400&q=80" alt="Driver Profesional">
+        <p>Driver Profesional & Ramah</p>
+    </div>
+    <div class="service-item">
+        <img src="https://images.unsplash.com/photo-1611662491017-448ae920dd0e?auto=format&fit=crop&w=400&q=80" alt="City Tour">
+        <p>Layanan Antar Jemput & City Tour</p>
+    </div>
+</div>
+</section>
+
+<section>
+<h2>Testimoni Pelanggan</h2>
+<div class="testimonial">"Pelayanan cepat dan sopirnya sangat profesional!" – A. Rahman</div>
+<div class="testimonial">"Mobil bersih dan nyaman, sangat direkomendasikan." – S. Putri</div>
+<div class="testimonial">"Gocciban Trans membuat perjalanan saya menyenangkan." – R. Aditya</div>
+</section>
+
+<footer>
+&copy; 2026 Gocciban Trans. All rights reserved.
+</footer>
+
+<script>
+// Animasi scroll untuk layanan
+const items = document.querySelectorAll('.service-item');
+window.addEventListener('scroll', checkItems);
+function checkItems() {
+    const triggerBottom = window.innerHeight / 5 * 4;
+    items.forEach(item => {
+        const itemTop = item.getBoundingClientRect().top;
+        if(itemTop < triggerBottom){
+            item.classList.add('show');
+        }
+    });
+}
+checkItems();
+</script>
+
+</body>
+</html>
